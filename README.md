@@ -73,3 +73,39 @@ When a person issues the book it sets the availability to no and stores the deta
 ![image](https://user-images.githubusercontent.com/104623412/235436952-adf8077c-c191-4a3f-a18e-5bdcc6c5d471.png)
 
 7. Book is issued 
+
+## Connection of Database with Front End
+This is achieved using `PHP` which is programming language used to script websites that are dynamic and interactive.
+
+Database connection is established using `server_id`,`password`,`database_name`.
+
+`$con = mysqli_connect("localhost", "root", "", "library1");`
+
+`POST` method is used to push data from form to tables.
+
+`$_SERVER["REQUEST_METHOD"] == "POST"`
+
+For registration `$query = "INSERT INTO users (attribute1,attribute2,attribute3) VALUES('$attribute1','attribute2','$attribute3')";
+		$result = mysqli_query($con, $query);` query is used to fill the tables.
+
+`action` of form will refer to the file where php is written.
+
+## Documentation and References
+https://stackoverflow.com/ 
+
+https://www.w3schools.com/
+
+https://getbootstrap.com/
+
+https://www.javatpoint.com/php-tutorial
+
+## Challenges
+
+While writing php code to connect to database , all the words are case sensitive.
+
+## Limitations
+1. It is running on Local host and hence is platform dependent . . 
+
+## Future Work
+
+Domain can be bought and hosting can be done. Frameworks like React/Next JS can be used to make it more interactive.Database fameworks like MongoDB can be implemented.It can be implemented using Firebase or Sanity.A chatbot for this website can be developed for assistance.
